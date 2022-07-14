@@ -23,6 +23,11 @@ code {
 
 h1 {
   margin: 0px;
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
 }
 
 button {
@@ -50,6 +55,7 @@ nav {
 .logo {
   display: flex;
   cursor: pointer;
+  align-items: center;
 }
 
 .logo p {
@@ -91,7 +97,7 @@ ul li a:hover {
 }
 
 .jumbotron {
-  background-image: url('./img/wallpaper.jpg');
+  background-image: url('./../img/wallpaper.jpg');
   width: 100%;
   height: 100vh;
   display: flex;
@@ -106,6 +112,10 @@ ul li a:hover {
 
 .jumbotron img {
   margin-top: 30vh;
+}
+
+.jumbotron h1 {
+
 }
 
 button {
@@ -129,7 +139,7 @@ button {
 }
 
 .about img {
-  width: 400px;
+  width: 1200px;
 }
 
 .movies {
