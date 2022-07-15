@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Card } from "../components/Card";
+import Modal from "../components/modal";
 import Nav from "../components/nav";
 import Jumbotron from "../components/jumbotron";
 import About from "../components/about";
 import Footer from "../components/footer";
+import {WithRouter} from "../utils/navigation"
 
 class HomePage extends Component {
   // constructor
@@ -44,6 +46,7 @@ class HomePage extends Component {
   render() {
     return (
       <>
+        <Modal />
         <Nav />
         <Jumbotron />
         <About />
@@ -52,9 +55,11 @@ class HomePage extends Component {
             <div className="movie-list">
               {this.state.datas.map((data) => (
                 <Card
+                  key={data.id}
                   title={data.title}
                   image={data.poster_path}
                   votes={data.vote_average}
+                  navigate={`/detail/${data.id}`}
                 />
               ))}
             </div>
@@ -65,4 +70,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+export default WithRouter(HomePage);
