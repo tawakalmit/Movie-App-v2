@@ -1,6 +1,6 @@
 import React from "react"
 import Logo from "./logo"
-import Link from "./link"
+import NavLink from "./link"
 import MenuToggle from "./menutoggle"
 
 class Nav extends React.Component {
@@ -8,7 +8,7 @@ class Nav extends React.Component {
         return(
         <nav className="navbar">
             <Logo />
-            <Link />
+            <NavLink />
             <MenuToggle />
         </nav>
         )

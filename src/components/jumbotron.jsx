@@ -8,9 +8,8 @@ class Jumbotron extends React.Component{
             <div className="jumbotron">
                 <img src={Image} alt="logo" />
                 <p>Welcome to MitMovie</p>
-                <h1>STREAMING FILMS FEATURE,</h1>
-                <h1>TELEVISION & GAMES</h1>
-                <Tombol fname="Browse Movies"/>
+                <h1>STREAMING FILMS</h1>
+                <Tombol fname={<a href="#movies">Browse Movies</a>}/>
             </div>
         )
     }

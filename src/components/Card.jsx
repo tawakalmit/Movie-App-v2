@@ -16,8 +16,8 @@ class Card extends Component {
           alt={this.props.title}
           height="750"
         />
-        <p className="">{this.props.title}</p>
-        <p className="">{this.props.votes}</p>
+        <p className="title-movie">{this.props.title}</p>
+        <p className="">{this.props.votes}/10 ⭐</p>
         </Link>
         <Button label="Add to favorite" />
       </div>

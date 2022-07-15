@@ -14,6 +14,7 @@ body {
   -moz-osx-font-smoothing: grayscale; */
   background-color: black;
   color: white;
+  min-height: 100vh;
 }
 
 code {
@@ -35,16 +36,16 @@ button {
 }
 
 button:hover {
-  background-color: #1abc9c;
+  background-color: #f1c40f;
 
 }
 
 nav {
-  position: fixed;
+  position: sticky;
+  top: 0px;
 	z-index: 999;
 	height: 50px;
 	background-color: black;
-	top: 0px;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -119,7 +120,7 @@ ul li a:hover {
 }
 
 button {
-  width: 120px;
+  width: 150px;
   height: 30px;
   background-color: blue;
   color: white;
@@ -155,13 +156,25 @@ button {
 }
 
 .movie-list img {
-  width: 250px;
+  width: 200px;
+  height: 325px;
   cursor: pointer;
+  border-radius: 10px;
+  margin: auto;
 }
 
 .movie-list-item {
+  width: 250px;
+  height: 488px;
   margin-top:20px;
   margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 10px;
+  padding: 10px 0;
 }
 
 .movie-list-item h3, .movie-list-item p {
@@ -174,7 +187,11 @@ button {
 
 .movie-list-item button {
   background-color: green;
-  margin-top: 15px;
+  width: 100%;
+}
+
+.title-movie {
+  padding: 10px;
 }
 
 .modal {

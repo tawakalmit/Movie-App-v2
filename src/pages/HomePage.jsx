@@ -50,7 +50,7 @@ class HomePage extends Component {
         <Nav />
         <Jumbotron />
         <About />
-          <div className="movies">
+          <div className="movies" id="movies">
             <h2>Our Movies</h2>
             <div className="movie-list">
               {this.state.datas.map((data) => (
